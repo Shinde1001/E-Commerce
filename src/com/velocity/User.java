@@ -28,14 +28,9 @@ public class User implements DataBase {
 	  
 	 switch (ch) {
 	    case 1:userRegistration();
-
-	    	break;
+	    		break;
 	    case 2:userLogin();
-
-			break;
-	
-	    default:
-	    	break;
+	    		break;
 	   }
        }
  
@@ -150,28 +145,19 @@ public class User implements DataBase {
 	   System.out.println("\t Enter Your Choice ");
 	   System.out.println("1.Product List");
 	   System.out.println("2.View Your Cart ");
-	   System.out.println("3.Bill Details");
 	   int ch = sc.nextInt();
 	   			switch (ch) {
 	   							case 1:selectProduct();
-	   									
-	   								break;
+	   									break;
 	   							case 2:viewCart();
-	   								
-	   								break;
-	   							case 3:
-	   								
-	   								break;
-
-	   							default:
-	   								break;
+	   									break;
 	}
 	   
    }
    
    
    public void viewCart() {
-	   	   Set<Integer> s = arr.keySet();//Pid & quantity 101,102
+	   	   Set<Integer> s = arr.keySet();
 	   	   System.out.println("\t\t Selected Product Detail");
 	   	   System.out.println("  \t Name \t     Price \t  Quantity \t  C-GST \t S-GST \t  Total Price ");
 	   	   int sum=1;

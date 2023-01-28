@@ -9,15 +9,14 @@ public class Test {
 		Admin admin = new Admin();
 		System.out.println(" \t\t\tWellcome Into Shopping ");
 		System.out.println("\n Enter The Choice ");
-		System.out.println("\n 1. User \t 2.Admin \t 3.Exit");
+		System.out.println("\n 1. User \t 2.Admin \t ");
 		int ch = sc.nextInt();
 		switch(ch) 
 		  {
 		        case 1:user.userMainMenu();
 		        	break;
-		        case 2:admin.MainMenu();
+		        case 2:admin.mainMenu();
 		        	
-		        default:
 		}
 		sc.close();
 	}

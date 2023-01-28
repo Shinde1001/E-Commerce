@@ -16,23 +16,18 @@ public class Admin implements DataBase {
 	PreparedStatement ps = null;
 	Formatter formatter = new Formatter();
 	Scanner sc = new Scanner(System.in);
-	public void MainMenu() {
+	public void mainMenu() {
 		System.out.println("\n\t\t Welcome Admin ");
 		System.out.println("\t\t Enter Your Choice ");
 		System.out.println(" 1.View Product List \t 2.View User List \t 3.User History ");
 		int ch = sc.nextInt();
 		switch (ch) {
 		case 1:viewProductList();
-			
-			break;
+			   break;
         case 2:getUserList();
-			
-			break;
+			   break;
         case 3:getHistory();
-		
-		break;	
-		default:
-			break;
+			   break;	
 		}
 	}
 	
@@ -93,8 +88,6 @@ public class Admin implements DataBase {
 		}
 		return connection;
 	}
-
-
 
 	
 	@Override
